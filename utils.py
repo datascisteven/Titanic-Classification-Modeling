@@ -86,7 +86,7 @@ def get_metrics(X_tr, y_tr, X_val, y_val, y_pred_tr, y_pred_val, model):
     labels = np.asarray(labels).reshape(2,2)
     sns.heatmap(cnf, annot=labels, fmt='', cmap='Blues', annot_kws={'size':16})
 
-def get_metrics_svc(X_tr, y_tr, X_val, y_val, y_pred_tr, y_pred_val, model):
+def get_metrics_2(X_tr, y_tr, X_val, y_val, y_pred_tr, y_pred_val, model):
     ac_tr = accuracy_score(y_tr, y_pred_tr)
     ac_val= accuracy_score(y_val, y_pred_val)
     f1_tr = f1_score(y_tr, y_pred_tr)
